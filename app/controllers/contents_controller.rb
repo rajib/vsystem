@@ -1,5 +1,6 @@
 class ContentsController < ApplicationController
   before_filter :login_required
+  before_filter :find_content
   layout 'admin'
 
   # contents GET    /contents
@@ -14,6 +15,20 @@ class ContentsController < ApplicationController
   
   # PUT    /contents
   def update
-    
+    respond_to do |format|
+      if @content.update_attributes(params[:content])
+        flash[:notice] = 'Content was successfully updated.'
+        format.html { redirect_to contents_path }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @content.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+protected
+  def find_content
+    @content = Content.first
   end
 end

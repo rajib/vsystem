@@ -2,12 +2,12 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
+    <title><%= h(yield(:title) || "Variant System") %></title>
     <%= stylesheet_link_tag 'admin' %>
     <%= yield(:head) %>
   </head>
   <body>
-    <h1>ADMIN PANEL</h1>
+    <h1>VARIANT SYSTEM ADMIN PANEL</h1>
     <div id="container">
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>

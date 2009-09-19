@@ -1,0 +1,34 @@
+<% form_for(@content, :url => contents_path) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :home %><br />
+    <%= f.text_area :home, :cols => '130' %>
+  </p>
+  <p>
+    <%= f.label :about_us %><br />
+    <%= f.text_area :about_us, :cols => '130' %>
+  </p>
+  <p>
+    <%= f.label :support %><br />
+    <%= f.text_area :support, :cols => '130' %>
+  </p>
+  <p>
+    <%= f.label :contact_us %><br />
+    <%= f.text_area :contact_us, :cols => '130' %>
+  </p>
+  <p>
+    <%= f.label :career %><br />
+    <%= f.text_area :career, :cols => '130' %>
+  </p>
+  <p>
+    <%= f.label :latest_offer %><br />
+    <%= f.text_area :latest_offer, :cols => '130' %>
+  </p>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', contents_path %> |
+<%= link_to 'Back', contents_path %>
