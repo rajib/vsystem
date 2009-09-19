@@ -16,5 +16,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :base
 
+  map.resource :contents
+
   map.root :controller => 'home'
 end
