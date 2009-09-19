@@ -1,0 +1,15 @@
+<% form_tag products_path, {:method => 'GET'} do %>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="140" align="left" valign="top">
+       <%= select("product", "item_id", @items.collect {|c| [ c.title, c.id ] }, { :prompt => 'Select product...' }) %>                                  
+    </td>
+    <td width="150" align="left" valign="top">
+      <%= select("product", "company_id", @companies.collect {|c| [ c.title, c.id ] }, { :prompt => 'Select company...' }) %>                         
+    </td>
+    <td align="left" valign="middle">
+      <%= submit_tag "Search" %>
+    </td>
+  </tr>
+</table>
+<% end %>

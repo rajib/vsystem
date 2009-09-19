@@ -1,3 +1,4 @@
 class Item < ActiveRecord::Base
-  attr_accessible :title, :description
+  belongs_to :company
+  belongs_to :product
 end

@@ -26,26 +26,9 @@
                   </td>
                   <td width="422" height="79" align="left" valign="top" style="background:url(images/bg2.jpg) no-repeat;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                      <td align="left" valign="top" style="padding-top:40px; padding-left:26px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td width="140" align="left" valign="top">
-                              <select name="select" size="1" id="select">
-                                <option>Product</option>
-                                <option>Demo Product2</option>
-                                <option>Demo Product3</option>
-                                <option>Demo Product4</option>
-                              </select>                          </td>
-                          <td width="150" align="left" valign="top">
-                              <select name="select2" size="1" id="select2">
-                                <option>Company</option>
-                                <option>Demo Company1</option>
-                                <option>Demo Company2</option>
-                                <option>Demo Company3</option>
-                                <option>Demo Company4</option>
-                              </select>                          </td>
-                          <td align="left" valign="middle"><a href="#" class="link_order">Search</a></td>
-                        </tr>
-                      </table></td>
+                      <td align="left" valign="top" style="padding-top:40px; padding-left:26px;">
+                        <%= render :partial =>"shared/search_box" %>
+                      </td>
                     </tr>
                   </table></td>
                 </tr>

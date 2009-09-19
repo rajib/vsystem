@@ -1,14 +1,14 @@
-class CreateItems < ActiveRecord::Migration
+class CreateCompanies < ActiveRecord::Migration
   def self.up
-    create_table :items do |t|
+    create_table :companies do |t|
       t.string :title
       t.text :description
 
       t.timestamps
     end
   end
-  
+
   def self.down
-    drop_table :items
+    drop_table :companies
   end
 end
