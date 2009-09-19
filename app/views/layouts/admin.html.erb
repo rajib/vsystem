@@ -7,7 +7,7 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <h1>VARIANT SYSTEM ADMIN PANEL</h1>
+    <div id="header" style="padding-left:120px;"> <h1>VARIANT SYSTEM ADMIN PANEL</h1></div>
     <div id="container">
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
@@ -19,7 +19,7 @@
 
        <% if logged_in? %>
          Welcome <%=h current_user.username %>
-         <%= link_to "Log out", logout_path %>
+         <%= link_to "Log out", logout_path %> | <%= link_to "Admin Home Page", base_url %>
        <% end %>
       
       <%= yield %>
