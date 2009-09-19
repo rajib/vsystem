@@ -26,9 +26,4 @@ class ContentsController < ApplicationController
       end
     end
   end
-
-protected
-  def find_content
-    @content = Content.first
-  end
 end
