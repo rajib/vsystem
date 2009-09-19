@@ -1,16 +1,10 @@
-<% title "Sign up" %>
-
-<p>Already have an account? <%= link_to "Log in", login_path %>.</p>
+<% title "Create New User" %>
 
 <% form_for @user do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :username %><br />
     <%= f.text_field :username %>
-  </p>
-  <p>
-    <%= f.label :email, "Email Address" %><br />
-    <%= f.text_field :email %>
   </p>
   <p>
     <%= f.label :password %><br />

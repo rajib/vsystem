@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+  before_filter :login_required
+  layout 'admin'
+
   def index
     @items = Item.all
   end

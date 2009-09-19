@@ -1,0 +1,44 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <% if params[:controller] == 'home' && params[:action] == 'index' %>
+      <td width="109" height="32" align="left" valign="top" class="button_current">Home</td>
+    <% else %>
+      <td width="109" height="32" align="left" valign="top">
+          <%= link_to "Home", root_path, :class =>'link_button' %>
+      </td>
+    <% end %>
+
+    <% if params[:controller] == 'home' && params[:action] == 'about_us' %>
+      <td width="109" height="32" align="left" valign="top" class="button_current">About Us</td>
+    <% else %>
+      <td width="109" height="32" align="left" valign="top">
+          <%= link_to "About Us", about_us_path, :class =>'link_button' %>
+      </td>
+    <% end %>
+
+    <% if params[:controller] == 'products' %>
+      <td width="109" height="32" align="left" valign="top" class="button_current">Products</td>
+    <% else %>
+      <td width="109" height="32" align="left" valign="top">
+          <%= link_to "Products", products_path, :class =>'link_button' %>
+      </td>
+    <% end %>
+
+    <% if params[:controller] == 'home' && params[:action] == 'support' %>
+      <td width="109" height="32" align="left" valign="top" class="button_current">Support</td>
+    <% else %>
+      <td width="109" height="32" align="left" valign="top">
+          <%= link_to "Support", support_path, :class =>'link_button' %>
+      </td>
+    <% end %>
+
+    <% if params[:controller] == 'home' && params[:action] == 'contact_us' %>
+      <td width="109" height="32" align="left" valign="top" class="button_current">Contact Us</td>
+    <% else %>
+      <td width="109" height="32" align="left" valign="top">
+          <%= link_to "Contact Us", contact_us_path, :class =>'link_button' %>
+      </td>
+    <% end %>
+    <td width="25" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>

@@ -2,21 +2,255 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application' %>
+    <title><%= h(yield(:title) || "Variant System") %></title>
+    <%= stylesheet_link_tag 'styles' %>
     <%= yield(:head) %>
   </head>
   <body>
-    <div id="container">
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <%- end -%>
-      
-      <%- if show_title? -%>
-        <h1><%=h yield(:title) %></h1>
-      <%- end -%>
-      
-      <%= yield %>
-    </div>
+    <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="173" align="left" valign="top" style="background:url(images/top_gra.jpg) repeat-x;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="94" align="left" valign="top">
+                <%= link_to '<img src="images/LOGO.jpg" width="295" height="64" style="border:0px;" />', root_path, :style => 'border:0px;' %>
+                
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="left" valign="bottom" style="padding-left:30px; padding-bottom:23px;">
+                    <%= render :partial => "/shared/navigation" %>  
+                  </td>
+                  <td width="422" height="79" align="left" valign="top" style="background:url(images/bg2.jpg) no-repeat;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="left" valign="top" style="padding-top:40px; padding-left:26px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="140" align="left" valign="top">
+                              <select name="select" size="1" id="select">
+                                <option>Product</option>
+                                <option>Demo Product2</option>
+                                <option>Demo Product3</option>
+                                <option>Demo Product4</option>
+                              </select>                          </td>
+                          <td width="150" align="left" valign="top">
+                              <select name="select2" size="1" id="select2">
+                                <option>Company</option>
+                                <option>Demo Company1</option>
+                                <option>Demo Company2</option>
+                                <option>Demo Company3</option>
+                                <option>Demo Company4</option>
+                              </select>                          </td>
+                          <td align="left" valign="middle"><a href="#" class="link_order">Search</a></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="636" height="301" align="left" valign="top" style="background:url(images/LEFT_BANNER.jpg) no-repeat;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="right" valign="top" style="padding-top:46px; padding-right:45px;" class="black30tahoma">Welcome to <span style="color:#ff5a0f;">Our Site...</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" style="padding-left:311px; padding-top:31px;" class="black16tahoma"><span style="color:#00000; font-size:22px; font-weight:normal;">Lorem ipsum!</span><br />
+                      <span style="color:#ffffff; font-size:18px; font-weight:normal;">Help us get our 1 million customer</span><br />
+                      <span style="color:#030303; font-size:15px;">and we will give away...</span><br />
+                      <span style="color:#f24501; font-size:20px; font-weight:normal;">$1,000,0 Package</span><br />
+                      We are so close come on we can do it!</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top" style="padding:30px 18px 0 0px;"><a href="#" class="link_order">Order Now!</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+            <td align="left" valign="top" style="background:url(images/right_banner.jpg) no-repeat"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" valign="top" style="padding-right:15px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="right" valign="top" class="gry26bold" style="padding-top:60px;"><span style="color:#ee5808;">S</span>pecial <span style="color:#ee5808;">P</span>roducts!</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top" class="black20" style="padding-top:45px;">Offer Price:</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top" class="orenge20">$700/-</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top" style="padding-top:50px;"><img src="images/special_button.jpg" width="158" height="45" border="0" usemap="#Map" /></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" style="background-color:#FFFFFF;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="13" align="left" valign="top" style="background:url(images/left.jpg) repeat-y;">&nbsp;</td>
+        <td align="left" valign="top" style="padding-top:9px; padding-bottom:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="187" align="left" valign="top" style="padding-left:4px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" valign="top" style="border:1px solid #d3d3d3;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="40" align="left" valign="middle" class="orenge15" style="background:url(images/product_bg.jpg) repeat-x; padding-left:10px;">Products</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" style="padding-right:16px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Computer</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                            <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                              <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="16" height="20" align="center" valign="middle"><img src="images/arrow.jpg" width="8" height="8" /></td>
+                              <td align="left" valign="middle"><a href="#" class="link_product">Comuter</a></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" style="padding-top:10px;"><img src="images/ad2.jpg" width="185" height="95" /></td>
+              </tr>
+            </table></td>
+            <td align="left" valign="top" style="padding:0 8px 0 8px;">
+		          <%= yield %>
+	          </td>
+            <td width="187" align="center" valign="top" style="padding-right:4px; padding-top:30px;"><img src="images/ad.jpg" width="64" height="350" /></td>
+          </tr>
+        </table></td>
+        <td width="13" align="left" valign="top" style="background:url(images/right.jpg) repeat-y;">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="93" align="center" valign="middle" style="background:url(images/footer_gra.jpg) repeat-x;">
+      <%= render :partial => "/shared/footer" %>
+    </td>
+  </tr>
+</table>
+
+    <map name="Map" id="Map">
+    <area shape="poly" coords="1,10" href="#" /><area shape="rect" coords="3,-1,158,36" href="#" />
+    </map>
   </body>
 </html>

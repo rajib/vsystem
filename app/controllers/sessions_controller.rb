@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  before_filter :login_required, :only => [:destroy]
+  layout 'admin'
+
   def new
   end
   
@@ -7,7 +10,7 @@ class SessionsController < ApplicationController
     if user
       session[:user_id] = user.id
       flash[:notice] = "Logged in successfully."
-      redirect_to_target_or_default(root_url)
+      redirect_to_target_or_default(base_url)
     else
       flash.now[:error] = "Invalid login or password."
       render :action => 'new'

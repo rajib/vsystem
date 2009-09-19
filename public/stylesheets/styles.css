@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding:0px;
+	margin:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color:#3d3d3d;
+	background-color:#333333;
+	
+}
+.gry26bold{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:26px;
+	font-weight: normal;
+	color:#706e6e;
+}
+.black20{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight: normal;
+	color:#000000;
+}
+.orenge20{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight: bold;
+	color:#ee5808;
+}
+.black30tahoma{
+	font-family: Tahoma;
+	font-size:30px;
+	font-weight: normal;
+	color:#000000;
+}
+.black16tahoma{
+	font-family: Tahoma;
+	font-size:16px;
+	font-weight: bold;
+	color:#000000;
+	line-height:20px;
+}
+.link_order:link, .link_order:active, .link_order:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration: underline;
+	color:#010101;
+}
+.link_order:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#010101;
+}
+.link_button:link, .link_button:active, .link_button:visited{
+	background:url(/images/button4.jpg) no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration: none;
+	color:#010101;
+	width:109px;
+	height:26px;
+	display:block;
+	padding-top:5px;
+	text-align:center;
+}
+.link_button:hover{
+	background:url(/images/button3.jpg) no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration: none;
+	color:#010101;
+	width:109px;
+	height:26px;
+	display:block;
+	padding-top:5px;
+	text-align:center;
+	
+}
+image{
+	border:none;
+}
+.button_current{
+	background:url(/images/button3.jpg) no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration: none;
+	color:#010101;
+	width:109px;
+	height:26px;
+	display:block;
+	padding-top:5px;
+	text-align:center;
+}
+.orenge15{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight: bold;
+	color:#ff6d00;
+}
+.link_product:link, .link_product:active, .link_product:visited{
+	background: url(/images/devider.jpg) repeat-x bottom;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration: none;
+	color:#848282;
+	width:151px;
+	height:22px;
+	display:block;
+	padding-top:5px;
+}
+.link_product:hover{
+	background: url(/images/devider.jpg) repeat-x bottom;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration: none;
+	color:#000000;
+	width:151px;
+	height:22px;
+	display:block;
+	padding-top:5px;
+}
+.downline{
+	background: url(/images/arrow2.jpg) no-repeat left top;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration: none;
+	color:#3c3c3c;
+	display:block;
+	padding-left:15px;
+	padding-bottom:7px;
+}
+.link_footer:link, .link_footer:active, .link_footer:visited{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration: none;
+	color:#5f5959;
+	
+}
+.link_footer:hover{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration: none;
+	color:#f47c05;
+	
+}
+.ver11{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight: normal;
+	color:#616160;
+}
+.link_more:link, .link_more:active, .link_more:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration: underline;
+	color:#ee5808;
+	
+}
+.link_more:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration: none;
+	color:#ee5808;
+	
+}
+.black14tahoma{
+	font-family: Tahoma;
+	font-size:14px;
+	font-weight: bold;
+	color:#000000;
+}
+.orengek16tahoma{
+	font-family: Tahoma;
+	font-size:16px;
+	font-weight: bold;
+	color:#f24501;
+}
+
+.link_asharrow:link, .link_asharrow:active, .link_asharrow:visited{
+	background:url(/images/bulet.jpg) no-repeat right;
+	text-align:right;
+	padding-right:15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight: normal;
+	color:#777777;
+	text-decoration: none;
+	
+}
+.link_asharrow:hover{
+	background:url(/images/bulet.jpg) no-repeat right;
+	text-align:right;
+	padding-right:15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight: normal;
+	color:#777777;
+	text-decoration: underline;
+	
+}
+.style1{
+	font-size:12px;
+	color: #FF0000;
+}
