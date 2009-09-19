@@ -1,2 +1,57 @@
-<h1>Stores#index</h1>
-<p>Find me in app/views/stores/index.html.erb</p>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid rgb(211, 211, 211); background-color: rgb(253, 253, 253);">
+  <tbody>
+    <tr>
+      <td valign="top" align="left" style="padding: 8px;">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td valign="top" height="30" align="left" class="black16tahoma">
+                <span style="color: rgb(242, 69, 1);">Products</span>
+              </td>
+            </tr>
+
+              
+
+            <tr>
+              <td valign="bottom" height="20" align="right">
+                <table id="results" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <th valign="top" height="30" align="left">Title</th>
+                    <th valign="top" height="30" align="left">Product</th>
+                    <th valign="top" height="30" align="left">Company</th>
+                    <th valign="top" height="30" align="left">Price</th>
+                  </tr>
+                  <% if @items.size > 0 %>
+                    <% for item in @items %>
+                      <tr>
+                        <td valign="top" height="30" align="left">
+                          <span><%= item.title %></span>
+                        </td>
+                        <td valign="top" height="30" align="left">
+                          <span><%=h item.product.title %></span>
+                        </td>
+                        <td valign="top" height="30" align="left">
+                          <span><%=h item.company.title %></span>
+                        </td>
+                        <td valign="top" height="30" align="left">
+                          <span><%=h (item.price ? item.price : "---") %></span>
+                        </td>
+                      </tr>
+                    <% end %>
+                 <% else %>
+                      <tr>
+                        <td valign="top" height="30" align="left">
+                          <span>No Results Found</span>
+                        </td>
+                      </tr>
+                 <% end %>
+                </table>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

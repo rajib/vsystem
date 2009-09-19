@@ -1,6 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :companies
-
   map.logout 'logout', :controller => 'sessions', :action => 'destroy'
   map.login 'login', :controller => 'sessions', :action => 'new'
   map.about_us 'about_us', :controller => 'home', :action => 'about_us'
@@ -15,6 +13,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :items
   
   map.resources :products
+
+  map.resources :companies
+
+  map.resources :stores
 
   map.resource :base
 

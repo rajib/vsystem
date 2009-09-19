@@ -1,10 +1,12 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<% for product in @products %>
   <tr>
     <td width="16" height="20" align="center" valign="middle">
         <img src="images/arrow.jpg" width="8" height="8" />
     </td>
     <td align="left" valign="middle">
-        <a href="#" class="link_product">Computer</a>
+      <%= link_to product.title, "/stores?product[product_id]=#{product.id}&product[company_id]=&commit=Search", :class => "link_product" %>
     </td>
   </tr>
+<% end %>
 </table>

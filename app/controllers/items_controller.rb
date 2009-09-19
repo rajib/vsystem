@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   layout 'admin'
 
   def index
-    @items = Item.all
+
   end
   
   def show

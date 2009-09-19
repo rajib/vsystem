@@ -16,11 +16,11 @@
       </td>
     <% end %>
 
-    <% if params[:controller] == 'products' %>
+    <% if params[:controller] == 'stores' %>
       <td width="109" height="32" align="left" valign="top" class="button_current">Products</td>
     <% else %>
       <td width="109" height="32" align="left" valign="top">
-          <%= link_to "Products", products_path, :class =>'link_button' %>
+          <%= link_to "Products", stores_path, :class =>'link_button' %>
       </td>
     <% end %>
 
