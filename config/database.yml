@@ -16,7 +16,9 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
   adapter: mysql
-  database: vsystem_development
+  encoding: utf8
+  reconnect: false
+  database: kesslerkyu_vsystem_development
   pool: 5
   username: kesslerkyu
   password: qmvrdtasiplq
