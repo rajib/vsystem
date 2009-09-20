@@ -16,7 +16,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :companies
 
-  map.resources :stores
+  map.resources :stores, :collection => {:special => :get}
 
   map.resource :base
 

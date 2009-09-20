@@ -68,7 +68,7 @@
                     <td align="right" valign="top" class="black20" style="padding-top:45px;">Offer Price:</td>
                   </tr>
                   <tr>
-                    <td align="right" valign="top" class="orenge20">$700/-</td>
+                    <td align="right" valign="top" class="orenge20"><%=h (@specials.first.price ? @specials.first.price : "---") %>/-</td>
                   </tr>
                   <tr>
                     <td align="right" valign="top" style="padding-top:50px;"><img src="/images/special_button.jpg" width="158" height="45" border="0" usemap="#Map" /></td>
@@ -124,7 +124,8 @@
 </table>
 
     <map name="Map" id="Map">
-    <area shape="poly" coords="1,10" href="#" /><area shape="rect" coords="3,-1,158,36" href="#" />
+      <area shape="poly" coords="1,10" href="#" />
+      <area shape="rect" coords="3,-1,158,36" href="/stores/special" />
     </map>
   </body>
 </html>

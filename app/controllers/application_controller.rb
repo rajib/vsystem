@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   before_filter :find_items
   before_filter :find_companies
   before_filter :find_products
+  before_filter :find_special_products
   include Authentication
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
@@ -27,5 +28,9 @@ protected
 
   def find_products
     @products = Product.find(:all, :order => :title)
+  end
+
+  def find_special_products
+    @specials = Item.scoped_by_tag('special')
   end
 end
