@@ -190,12 +190,25 @@ image{
 	color:#f24501;
 }
 
+.black12tahoma{
+	font-family: Tahoma;
+	font-size:12px;
+	font-weight: bold;
+	color:#000000;
+}
+.orengek12tahoma{
+	font-family: Tahoma;
+	font-size:12px;
+	font-weight: bold;
+	color:#f24501;
+}
+
 .link_asharrow:link, .link_asharrow:active, .link_asharrow:visited{
 	background:url(/images/bulet.jpg) no-repeat right;
 	text-align:right;
 	padding-right:15px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-size:11px;
 	font-weight: normal;
 	color:#777777;
 	text-decoration: none;
@@ -206,7 +219,7 @@ image{
 	text-align:right;
 	padding-right:15px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-size:11px;
 	font-weight: normal;
 	color:#777777;
 	text-decoration: underline;

@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
-  
+  before_filter :new_items
+
   def index
     
   end
@@ -18,5 +19,11 @@ class HomeController < ApplicationController
 
   def careers
     
+  end
+
+protected
+  def new_items
+    @new_items = Item.find(:all, :order => "created_at DESC", :limit => 3)
+    @all_new_items = Item.find(:all, :order => "created_at DESC")
   end
 end

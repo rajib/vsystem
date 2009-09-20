@@ -1,0 +1,37 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+<% count = 0 %>
+<% for n_item in @new_items %>
+  <% count = count + 1 %>
+    <td width="148" height="175" align="left" valign="top" style="background:url(images/box.jpg) no-repeat;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="left" valign="top" style="padding:10px 13px 0px 11px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="113" align="center" valign="middle" style="background-color:#FFFFFF;">
+              <%= image_tag n_item.product.avatar.url, :width => "116", :height => "86" %>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" valign="top" class="black12tahoma">
+                  Price:  <span class="orengek12tahoma"><%= (n_item.price ? n_item.price : "---") %></span>
+                </td>
+              </tr>
+              <tr>
+                <td height="18" align="right" valign="bottom"><a href="#" class="link_asharrow"><%= (n_item.title ? n_item.title : "---") %></a></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+<% unless count > 2 %>
+    <td width="13" align="left" valign="top">&nbsp;</td>
+<% end %>
+
+<% end %>
+
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>

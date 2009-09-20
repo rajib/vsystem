@@ -5,8 +5,20 @@
   <%=h @item.title %>
 </p>
 <p>
+  <strong>Product:</strong>
+  <%=h (@item.product ? @item.product.title : "---") %>
+</p>
+<p>
+  <strong>Company:</strong>
+  <%=h (@item.company ? @item.company.title : "---") %>
+</p>
+<p>
   <strong>Price:</strong>
-  <%=h @item.price %>
+  <%=h (@item.price ? @item.price : "---") %>
+</p>
+<p>
+  <strong>Tag:</strong>
+  <%=h (@item.tag ? @item.tag : "---") %>
 </p>
 <p>
   <strong>Description:</strong>

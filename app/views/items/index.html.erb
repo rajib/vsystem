@@ -6,15 +6,15 @@
     <th align="left">Product</th>
     <th align="left">Company</th>
     <th align="left">Price</th>
-    <th align="left">Description</th>
+    <th align="left">Tag</th>
   </tr>
   <% for item in @items %>
     <tr>
       <td><%=h item.title %></td>
-      <td><%=h item.product.title %></td>
-      <td><%=h item.company.title %></td>
+      <td><%=h (item.product ? item.product.title : "---") %></td>
+      <td><%=h (item.company ? item.company.title : "---") %></td>
       <td><%=h (item.price ? item.price : "---") %></td>
-      <td><%=h (item.description ? item.description : "---") %></td>
+      <td><%=h (item.tag ? item.tag : "---") %></td>
       <td><%= link_to "Show", item %></td>
       <td><%= link_to "Edit", edit_item_path(item) %></td>
       <td><%= link_to "Destroy", item, :confirm => 'Are you sure?', :method => :delete %></td>

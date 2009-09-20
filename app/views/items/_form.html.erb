@@ -9,6 +9,13 @@
     <%= f.select("company_id", @companies.collect {|c| [ c.title, c.id ] }, { :prompt => 'Select company...' }) %>
   </p>
   <p>
+    <%= f.label :tag, "Tag" %><br />
+    <select id="item_tag" name="item[tag]">
+      <option value="---">Select tag...</option>
+      <option value="Special">Special</option>
+    </select>
+  </p>
+  <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </p>

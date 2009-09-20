@@ -28,10 +28,10 @@
                           <span><%= item.title %></span>
                         </td>
                         <td valign="top" height="30" align="left">
-                          <span><%=h item.product.title %></span>
+                          <span><%=h (item.product ? item.product.title : "---") %></span>
                         </td>
                         <td valign="top" height="30" align="left">
-                          <span><%=h item.company.title %></span>
+                          <span><%=h (item.company ? item.company.title : "---") %></span>
                         </td>
                         <td valign="top" height="30" align="left">
                           <span><%=h (item.price ? item.price : "---") %></span>
