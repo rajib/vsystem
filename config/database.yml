@@ -32,8 +32,8 @@ test:
   reconnect: false
   database: vsystem_test
   pool: 5
-  username: root
-  password:
+  username: kesslerkyu
+  password: qmvrdtasiplq
 
 production:
   adapter: mysql
@@ -41,5 +41,5 @@ production:
   reconnect: false
   database: vsystem_production
   pool: 5
-  username: root
-  password:
+  username: kesslerkyu
+  password: qmvrdtasiplq
