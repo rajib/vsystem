@@ -15,4 +15,8 @@ class StoresController < ApplicationController
       end
     end
   end
+
+  def show
+    @item = Item.find(params[:id])
+  end
 end

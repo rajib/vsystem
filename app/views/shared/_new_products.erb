@@ -19,7 +19,9 @@
                 </td>
               </tr>
               <tr>
-                <td height="18" align="right" valign="bottom"><a href="#" class="link_asharrow"><%= (n_item.title ? n_item.title : "---") %></a></td>
+                <td height="18" align="right" valign="bottom">
+                  <%= link_to (n_item.title ? n_item.title : "---"), store_path(n_item), :class => "link_asharrow" %>
+                </td>
               </tr>
             </table></td>
           </tr>
